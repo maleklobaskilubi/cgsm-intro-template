@@ -1,7 +1,7 @@
 # ============================================
 # Súbor: uloha_chyby.py
 # Úloha: Každá funkcia obsahuje jednoduchú chybu,
-#        ktorú musí študent opraviť a commitnúť.
+#        ktorú musíš opraviť a commitnúť.
 # ============================================
 
 
