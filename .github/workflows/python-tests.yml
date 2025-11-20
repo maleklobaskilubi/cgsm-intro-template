@@ -22,33 +22,33 @@ jobs:
       - name: Run embedded tests
         run: |
           python3 - << 'EOF'
-from uloha_chyby import (
-    sucet,
-    je_parne,
-    obvod_stvorca,
-    priemer,
-    obsahuje_a
-)
+          from uloha_chyby import (
+              sucet,
+              je_parne,
+              obvod_stvorca,
+              priemer,
+              obsahuje_a,
+          )
 
-# ---- Test 1: sucet ----
-assert sucet(2, 3) == 5, "sucet(2,3) musí byť 5"
-assert sucet(-1, 1) == 0, "sucet(-1,1) musí byť 0"
+          # ---- Test 1: sucet ----
+          assert sucet(2, 3) == 5, "sucet(2,3) musí byť 5"
+          assert sucet(-1, 1) == 0, "sucet(-1,1) musí byť 0"
 
-# ---- Test 2: je_parne ----
-assert je_parne(2) is True, "je_parne(2) má byť True"
-assert je_parne(3) is False, "je_parne(3) má byť False"
+          # ---- Test 2: je_parne ----
+          assert je_parne(2) is True, "je_parne(2) má byť True"
+          assert je_parne(3) is False, "je_parne(3) má byť False"
 
-# ---- Test 3: obvod_stvorca ----
-assert obvod_stvorca(5) == 20, "obvod_stvorca(5) má byť 20"
-assert obvod_stvorca(1) == 4, "obvod_stvorca(1) má byť 4"
+          # ---- Test 3: obvod_stvorca ----
+          assert obvod_stvorca(5) == 20, "obvod_stvorca(5) má byť 20"
+          assert obvod_stvorca(1) == 4, "obvod_stvorca(1) má byť 4"
 
-# ---- Test 4: priemer ----
-assert priemer([1, 2, 3]) == 2, "priemer([1,2,3]) má byť 2"
-assert priemer([10, 20]) == 15, "priemer([10,20]) má byť 15"
+          # ---- Test 4: priemer ----
+          assert priemer([1, 2, 3]) == 2, "priemer([1,2,3]) má byť 2"
+          assert priemer([10, 20]) == 15, "priemer([10,20]) má byť 15"
 
-# ---- Test 5: obsahuje_a ----
-assert obsahuje_a("mačka") is True, "obsahuje_a('mačka') má byť True"
-assert obsahuje_a("strom") is False, "obsahuje_a('strom') má byť False"
+          # ---- Test 5: obsahuje_a ----
+          assert obsahuje_a("mačka") is True, "obsahuje_a('mačka') má byť True"
+          assert obsahuje_a("strom") is False, "obsahuje_a('strom') má byť False"
 
-print("✅ Všetky testy prešli úspešne!")
-EOF
+          print("✅ Všetky testy prešli úspešne!")
+          EOF
